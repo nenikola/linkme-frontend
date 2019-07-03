@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ item.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img no-padding [src]="item.imageUrl"></ion-img>
+  <ion-label style="text-decoration-line: underline">
+    {{ item.price }}
+  </ion-label>
+  <ion-label>
+    {{ item.linkUrl }}
+  </ion-label>
+</ion-content>

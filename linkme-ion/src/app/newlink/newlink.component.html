@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Paste URL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-text padding>
+        Please enter URL of shoes you want to hunt.
+      </ion-text>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-text padding color="danger">
+        (For now only URLs from djaksport.rs and sportvision.rs allowed)
+      </ion-text>
+    </ion-item>
+    <ion-item-divider></ion-item-divider>
+    <ion-item>
+      <ion-label position="floating">URL</ion-label>
+      <ion-input [(ngModel)]="url"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button padding color="primary" (click)="onSubmit()" text-center
+    >Submit</ion-button
+  >
+</ion-content>

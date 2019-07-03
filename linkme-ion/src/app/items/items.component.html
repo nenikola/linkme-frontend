@@ -1,0 +1,12 @@
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    <app-item
+      (click)="go(item.id)"
+      [name]="item.name"
+      [price]="item.price"
+      [imageUrl]="item.imageUrl"
+      [linkUrl]="item.linkUrl"
+      [id]="item.id"
+    ></app-item>
+  </ion-item>
+</ion-list>
